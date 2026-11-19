@@ -1,0 +1,69 @@
+body {
+    margin: 0;
+    background-color: #3887b9;
+    font-family: Verdana, sans-serif;
+    color: rgb(91, 51, 51);
+}
+
+/* semua dibungkus, lebarnya dikunci biar ke tengah layar */
+.pembungkus {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 15px;
+}
+
+.kepala, .kaki {
+    background-color: #729e72;
+    padding: 18px;
+    text-align: center;
+    font-size: 26px;
+    font-weight: bold;
+}
+
+/* badan ini yang flex: aside di kiri, article di kanan */
+.badan {
+    display: flex;
+    margin: 15px 0;
+    height: 380px;
+}
+
+/* aside lebarnya kukunci 200px, jadi nggak ikut melar */
+.kiri {
+    width: 200px;
+    background-color: #9f5086;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+/* article ambil semua sisa lebar */
+.kanan {
+    flex: 1;
+    background-color: #cf33a5;
+    margin-left: 15px;
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+}
+
+.kanan h2 {
+    text-align: center;
+    font-size: 26px;
+    margin: 0 0 15px 0;
+}
+
+/* margin-top: auto dorong foto ke bagian bawah kotak article */
+.baris-foto {
+    display: flex;
+    margin-top: auto;
+}
+
+.baris-foto img {
+    flex: 1;
+    min-width: 0;
+    height: 230px;
+    object-fit: cover;
+    margin: 0 5px;
+}

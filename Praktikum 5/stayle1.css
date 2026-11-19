@@ -1,0 +1,23 @@
+header {
+    background-color: rgb(0, 239, 159);
+    margin: -16px -8px;
+}
+
+header ul {
+    display: flex;
+    align-items: center;
+    padding: 4px;
+    list-style: none;
+}
+
+header li {
+     margin: 2px 7px;
+}
+
+header li.logo { 
+    margin-right: auto;
+}
+
+header img.logo {
+     width: 50px;
+}

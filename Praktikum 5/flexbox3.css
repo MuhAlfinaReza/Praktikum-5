@@ -1,0 +1,25 @@
+body {
+    margin: 0;
+    background-color: antiquewhite;
+}
+
+.galeri {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 11px;
+}
+
+.baris {
+    display: flex;
+    gap: 9px;
+}
+
+.baris img {
+    flex: 1;
+    min-width: 20px;          
+    height: 160px;
+    object-fit: cover;     
+    border: 2px solid black;
+    border-radius: 5px;
+}
